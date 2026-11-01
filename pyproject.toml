@@ -1,0 +1,8 @@
+[project]
+name = "pre-datasets"
+version = "0.1.0"
+description = "From original data to ready-to-use datasets on Hugging Face."
+readme = "README.md"
+requires-python = ">=3.14"
+authors = [{ name = "Paxon Lee", email = "paxonlee@startown.ai" }]
+dependencies = []
