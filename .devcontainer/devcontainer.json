@@ -1,0 +1,39 @@
+{
+  "name": "Pre-Datasets",
+  "image": "startown/workspace-py:0.1",
+  "runArgs": [
+    "--name",
+    "${localWorkspaceFolderBasename}-devcontainer",
+    "--env-file",
+    "${localWorkspaceFolder}/.env"
+  ],
+  "initializeCommand": "mkdir -p '${localEnv:HOME}/.cursor/projects/workspaces-${localWorkspaceFolderBasename}' && touch '${localWorkspaceFolder}/.env'",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,readonly",
+    "source=${localEnv:HOME}/.config/jj,target=/root/.config/jj,type=bind",
+    "source=${localEnv:HOME}/.ssh/id_ed25519.pub,target=/root/.ssh/id_ed25519.pub,type=bind,readonly",
+    "source=${localEnv:HOME}/.ssh/allowed_signers,target=/root/.ssh/allowed_signers,type=bind,readonly",
+    "source=${localEnv:HOME}/.cursor/projects/workspaces-${localWorkspaceFolderBasename},target=/root/.cursor/projects/workspaces-${localWorkspaceFolderBasename},type=bind",
+    "source=${localEnv:HOME}/.zsh_history,target=/root/.zsh_history,type=bind",
+    "source=${localWorkspaceFolderBasename}-venv,target=${containerWorkspaceFolder}/.venv,type=volume"
+  ],
+  "containerEnv": {
+    "UV_LINK_MODE": "copy",
+    "SSL_CERT_FILE": "/etc/ssl/certs/ca-certificates.crt"
+  },
+  "postCreateCommand": "uv sync",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff",
+        "astral-sh.ty",
+        "esbenp.prettier-vscode",
+        "tombi-toml.tombi",
+        "eamodio.gitlens",
+        "mathematic.vscode-pdf"
+      ]
+    }
+  }
+}
