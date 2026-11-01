@@ -10,3 +10,8 @@ dependencies = [
     "huggingface-hub>=2.4.0",
     "requests>=2.34.2",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
