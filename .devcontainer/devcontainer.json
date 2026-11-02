@@ -11,6 +11,7 @@
   "mounts": [
     "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,readonly",
     "source=${localEnv:HOME}/.config/jj,target=/root/.config/jj,type=bind",
+    "source=${localEnv:HOME}/.config/git,target=/root/.config/git,type=bind",
     "source=${localEnv:HOME}/.ssh/id_ed25519.pub,target=/root/.ssh/id_ed25519.pub,type=bind,readonly",
     "source=${localEnv:HOME}/.ssh/allowed_signers,target=/root/.ssh/allowed_signers,type=bind,readonly",
     "source=${localEnv:HOME}/.cursor/projects/workspaces-${localWorkspaceFolderBasename},target=/root/.cursor/projects/workspaces-${localWorkspaceFolderBasename},type=bind",
