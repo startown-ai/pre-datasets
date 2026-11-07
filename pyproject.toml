@@ -8,11 +8,5 @@ authors = [{ name = "Paxon Lee", email = "paxonlee@startown.ai" }]
 dependencies = [
     "datasets>=5.1.0",
     "huggingface-hub>=2.4.0",
-    "requests>=2.34.2",
     "typeguard>=4.6.0",
-]
-
-[dependency-groups]
-dev = [
-    "ipykernel>=7.4.0",
 ]
