@@ -9,6 +9,7 @@ dependencies = [
     "datasets>=5.1.0",
     "huggingface-hub>=2.4.0",
     "requests>=2.34.2",
+    "typeguard>=4.6.0",
 ]
 
 [dependency-groups]
