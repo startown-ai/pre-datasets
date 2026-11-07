@@ -1,6 +1,6 @@
 # pre-datasets
 
-![License](https://img.shields.io/github/license/startown-ai/pre-datasets?style=flat-square)
+[![Hugging Face](https://img.shields.io/badge/hugging%20face-startown-ffd21e?logo=huggingface&logoColor=white&style=flat-square)](https://huggingface.co/startown) ![License](https://img.shields.io/github/license/startown-ai/pre-datasets?style=flat-square)
 
 From original data to ready-to-use datasets on [Hugging Face](https://huggingface.co/startown). Each folder downloads one dataset from its source, prepares it, and publishes it.
 
