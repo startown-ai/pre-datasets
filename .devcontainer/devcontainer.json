@@ -1,6 +1,6 @@
 {
   "name": "Pre-Datasets",
-  "image": "startown/workspace-py:0.1",
+  "image": "startown/workspace-py:0.2.0",
   "runArgs": [
     "--name",
     "${localWorkspaceFolderBasename}-devcontainer",
