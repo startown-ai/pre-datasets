@@ -1,6 +1,6 @@
 {
   "name": "Pre-Datasets",
-  "image": "startown/workspace-py:0.2.0",
+  "image": "startown/workspace-py:0.3.2",
   "runArgs": [
     "--name",
     "${localWorkspaceFolderBasename}-devcontainer",
@@ -19,8 +19,7 @@
     "source=${localWorkspaceFolderBasename}-venv,target=${containerWorkspaceFolder}/.venv,type=volume"
   ],
   "containerEnv": {
-    "UV_LINK_MODE": "copy",
-    "SSL_CERT_FILE": "/etc/ssl/certs/ca-certificates.crt"
+    "UV_LINK_MODE": "copy"
   },
   "postCreateCommand": "uv sync",
   "customizations": {
